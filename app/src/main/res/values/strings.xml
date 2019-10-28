@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MultipleTableSQLite</string>
+    <string name="database_summary">Total Student: %1$d. Total Subject: %2$d</string>
+</resources>

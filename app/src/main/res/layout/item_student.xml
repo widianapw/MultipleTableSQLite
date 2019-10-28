@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/studentNimTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="NIM"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/studentNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@+id/studentNimTextView"
+        android:text="NAMA"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/studentPhoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@+id/studentNameTextView"
+        android:text="PHONE"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/studentEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@+id/studentPhoneTextView"
+        android:text="EMAIL"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/studentEmailTextView"
+
+        android:background="@color/colorAccent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/editImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mode_edit_black_24dp"
+            android:alpha="0.5"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/crossImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:alpha="0.5"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

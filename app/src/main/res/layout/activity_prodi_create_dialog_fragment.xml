@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.prodi_crud.create_prodi.ProdiCreateDialogFragment"
+    android:padding="30dp">
+
+    <EditText
+        android:id="@+id/prodiFullNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Full Name"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/prodiNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prodiFullNameEditText"
+        android:hint="name"
+        android:inputType="textPersonName"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prodiNameEditText"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <Button
+            android:id="@+id/createButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Create"
+            android:textColor="#fff"
+            android:background="@drawable/button_add"/>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_cancel"
+            android:textColor="#fff"
+            android:text="Cancel"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
